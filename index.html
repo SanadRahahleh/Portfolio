@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanad Naser Rahahleh | Backend-Focused Full Stack .NET Developer</title>
+    <meta name="description" content="Sanad Naser Rahahleh is a Backend-Focused Full Stack .NET Developer with experience in ASP.NET Core, RESTful APIs, SQL Server, and Telecom Charging & Billing.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Sanad Naser Rahahleh | Backend-Focused Full Stack .NET Developer">
+    <meta property="og:description" content="Backend systems, RESTful APIs, databases, and practical Telecom Charging & Billing experience.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Notification Toast for Copying Email -->
+    <div id="toast" class="toast" role="alert" aria-live="polite">Email copied to clipboard!</div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#home" class="logo" aria-label="Sanad Rahahleh Home">SR<span>.</span></a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="nav-menu" class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#telecom" class="nav-link">Telecom</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#approach" class="nav-link">Approach</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-name">SANAD NASER RAHAHLEH</h1>
+                    <p class="hero-title"> Full Stack .NET Developer</p>
+                    
+                    <p class="hero-statement">
+                        Building reliable backend systems, RESTful APIs, and data-driven solutions, with practical experience in Telecom Charging & Billing.
+                    </p>
+                    
+                    <!-- Differentiator -->
+                    <div class="hero-differentiator">
+                        <span class="diff-tag">Software Development</span>
+                        <span class="diff-plus">+</span>
+                        <span class="diff-tag">Data</span>
+                        <span class="diff-plus">+</span>
+                        <span class="diff-tag">Telecom</span>
+                    </div>
+                    <!-- Hero Tech Badges -->
+                    <div class="hero-badges">
+                        <span class="tech-badge-hero">C#</span>
+                        <span class="tech-badge-hero">ASP.NET Core</span>
+                        <span class="tech-badge-hero">Web API</span>
+                        <span class="tech-badge-hero">SQL Server</span>
+                        <span class="tech-badge-hero">EF Core</span>
+                        <span class="tech-badge-hero">Angular</span>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="assets/" class="btn btn-secondary" download="Sanad-Rahahleh-CV.pdf">Download CV</a>
+                    </div>
+                </div>
+
+                <!-- Hero Supporting Visual (Subtle Workflow) -->
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="workflow-visual">
+                        <div class="workflow-node">
+                            <div class="node-title">API</div>
+                            <div class="node-subtitle">RESTful Requests</div>
+                        </div>
+                        <div class="workflow-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <div class="workflow-node highlight">
+                            <div class="node-title">Business Logic</div>
+                            <div class="node-subtitle">Security & validation</div>
+                        </div>
+                        <div class="workflow-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <div class="workflow-node">
+                            <div class="node-title">Database</div>
+                            <div class="node-subtitle">SQL Server / EF Core</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I am a Computer Science graduate and Full Stack .NET Developer with a specialized focus on Backend Development. My engineering principles are centered around building reliable, testable backend systems, robust RESTful APIs, and secure database designs that align closely with business requirements.
+                        </p>
+                        <p>
+                            Currently working at <strong>Zain Jordan</strong> within the <strong>Telecom Charging & Billing</strong> division, I have gained hands-on experience dealing with business-critical configurations, package rating, and subscriber data validation inside high-transaction billing environments. This domain knowledge has sharpened my analytical thinking and database verification skills.
+                        </p>
+                        <p>
+                            With experience spanning intensive technical training, software architectures, database validation, and telecom systems, I bridge the gap between technical execution and business rules. I am passionate about backend engineering, continuous learning, and writing scalable, clean code.
+                        </p>
+                    </div>
+                    
+                    <div class="focus-area">
+                        <h3 class="focus-title">Currently Focused On</h3>
+                        <div class="focus-grid">
+                            <div class="focus-card">
+                                <div class="focus-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 2 18 2 18 6 6 6 6 2"></polygon><rect x="3" y="6" width="18" height="16" rx="2"></rect><line x1="10" y1="12" x2="14" y2="12"></line></svg>
+                                </div>
+                                <h4>Backend Engineering</h4>
+                                <p>C# and robust .NET architectures.</p>
+                            </div>
+                            <div class="focus-card">
+                                <div class="focus-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+                                </div>
+                                <h4>RESTful APIs</h4>
+                                <p>Clean endpoints, validation, and structured errors.</p>
+                            </div>
+                            <div class="focus-card">
+                                <div class="focus-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                                </div>
+                                <h4>SQL & Databases</h4>
+                                <p>Schema relationships, constraints, and data integrity.</p>
+                            </div>
+                            <div class="focus-card">
+                                <div class="focus-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                                </div>
+                                <h4>System Design</h4>
+                                <p>Clean architecture patterns and separation of concerns.</p>
+                            </div>
+                            <div class="focus-card">
+                                <div class="focus-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                                </div>
+                                <h4>Telecom Charging</h4>
+                                <p>Service rating structures and billing configuration flows.</p>
+                            </div>
+                            <div class="focus-card">
+                                <div class="focus-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                                </div>
+                                <h4>Continuous Learning</h4>
+                                <p>Keeping up with software engineering practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="experience-timeline">
+                    
+                    <!-- Zain Jordan -->
+                    <div class="timeline-item main-experience">
+                        <div class="timeline-header">
+                            <span class="timeline-number">01</span>
+                            <div class="timeline-title-area">
+                                <h3 class="experience-title">Charging & Billing Specialist</h3>
+                                <h4 class="experience-company">Zain Jordan</h4>
+                            </div>
+                            <span class="experience-date">May 2026 – Present</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="experience-summary">
+                                Working in a large-scale, business-critical telecommunications environment processing high volumes of subscriber events and transactions daily. Focuses heavily on database querying, service behavior validation, configurations, and analytical cross-system testing.
+                            </p>
+                            <ul class="experience-bullets">
+                                <li>Gained hands-on experience in Telecom Charging and Billing systems within a large-scale telecommunications environment.</li>
+                                <li>Configured and managed telecom packages, services, and offers based on business requirements.</li>
+                                <li>Participated in creating and maintaining billing configurations for Zain telecom services.</li>
+                                <li>Used SQL to retrieve, analyze, and validate subscriber and service-related data.</li>
+                                <li>Participated in testing and validating charging behavior for telecom services and packages before deployment.</li>
+                                <li>Developed a strong understanding of how charging systems interact with billing, provisioning, and customer management systems.</li>
+                                <li>Worked with business-critical systems processing high volumes of subscriber transactions and usage events.</li>
+                            </ul>
+                            <div class="experience-tags">
+                                <span>Telecom Charging & Billing</span>
+                                <span>SQL Analysis</span>
+                                <span>Package Configuration</span>
+                                <span>Behavior Validation</span>
+                                <span>Cross-System Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Orange Coding School -->
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="timeline-number">02</span>
+                            <div class="timeline-title-area">
+                                <h3 class="experience-title">Full Stack Developer Trainee</h3>
+                                <h4 class="experience-company">Orange Coding School</h4>
+                            </div>
+                            <span class="experience-date">February 2026 – May 2026</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="experience-summary">
+                                Completed intensive full-stack development training with an emphasis on backend design patterns, database integrity, security, and API documentation.
+                            </p>
+                            <ul class="experience-bullets">
+                                <li>Completed intensive full-stack development training using ASP.NET Core.</li>
+                                <li>Designed and developed scalable RESTful APIs using ASP.NET Core Web API following Clean Architecture principles.</li>
+                                <li>Built and optimized databases using SQL Server and Entity Framework Core.</li>
+                                <li>Implemented secure authentication and authorization using JWT and role-based access control (RBAC).</li>
+                                <li>Developed and tested CRUD operations with validation and structured error handling.</li>
+                                <li>Integrated frontend with backend APIs using HTML, CSS, and JavaScript.</li>
+                                <li>Collaborated within Agile/Scrum teams.</li>
+                                <li>Used Git & GitHub for version control and Postman for API testing and validation.</li>
+                            </ul>
+                            <div class="experience-tags">
+                                <span>ASP.NET Core</span>
+                                <span>SQL Server</span>
+                                <span>Entity Framework Core</span>
+                                <span>Clean Architecture</span>
+                                <span>JWT & RBAC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Where Software Meets Telecom Section -->
+        <section id="telecom" class="telecom-section">
+            <div class="container">
+                <h2 class="section-title">Where Software Meets Telecom</h2>
+                <p class="section-subtitle">
+                    My experience combines software development, databases, business requirements, and practical Telecom Charging & Billing exposure.
+                </p>
+                
+                <div class="telecom-grid">
+                    <!-- Layered Interactive Diagram -->
+                    <div class="layered-visual-container">
+                        <div class="layered-stack" role="tablist" aria-label="Telecom Software Integration Layers">
+                            
+                            <button class="layer-btn active" id="layer-btn-1" role="tab" aria-selected="true" aria-controls="layer-panel" data-index="1">
+                                <span class="layer-number">01</span>
+                                <span class="layer-name">SOFTWARE DEVELOPMENT</span>
+                                <span class="layer-indicator"></span>
+                            </button>
+                            
+                            <button class="layer-btn" id="layer-btn-2" role="tab" aria-selected="false" aria-controls="layer-panel" data-index="2">
+                                <span class="layer-number">02</span>
+                                <span class="layer-name">BACKEND DEVELOPMENT</span>
+                                <span class="layer-indicator"></span>
+                            </button>
+                            
+                            <button class="layer-btn" id="layer-btn-3" role="tab" aria-selected="false" aria-controls="layer-panel" data-index="3">
+                                <span class="layer-number">03</span>
+                                <span class="layer-name">DATABASES & DATA</span>
+                                <span class="layer-indicator"></span>
+                            </button>
+                            
+                            <button class="layer-btn" id="layer-btn-4" role="tab" aria-selected="false" aria-controls="layer-panel" data-index="4">
+                                <span class="layer-number">04</span>
+                                <span class="layer-name">BUSINESS LOGIC</span>
+                                <span class="layer-indicator"></span>
+                            </button>
+                            
+                            <button class="layer-btn" id="layer-btn-5" role="tab" aria-selected="false" aria-controls="layer-panel" data-index="5">
+                                <span class="layer-number">05</span>
+                                <span class="layer-name">TELECOM DOMAIN</span>
+                                <span class="layer-indicator"></span>
+                            </button>
+                            
+                            <button class="layer-btn" id="layer-btn-6" role="tab" aria-selected="false" aria-controls="layer-panel" data-index="6">
+                                <span class="layer-number">06</span>
+                                <span class="layer-name">CHARGING & BILLING</span>
+                                <span class="layer-indicator"></span>
+                            </button>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Explanation Display Panel -->
+                    <div class="layer-explanation-box" id="layer-panel" role="tabpanel">
+                        <div class="explanation-content active" data-index="1">
+                            <h3>01 — Software Development</h3>
+                            <p class="lead">Creating clean, modular, and maintainable software systems.</p>
+                            <p>Utilizing clean coding standards, object-oriented concepts, and structural design pattern guidelines to construct systems that are robust and easy to expand.</p>
+                        </div>
+                        <div class="explanation-content" data-index="2">
+                            <h3>02 — Backend Development</h3>
+                            <p class="lead">Writing logic and APIs that serve as the engine of applications.</p>
+                            <p>Designing RESTful APIs and clean architecture in C# and ASP.NET Core. Structuring code with clear separation of concerns, middlewares, and exception handling filters.</p>
+                        </div>
+                        <div class="explanation-content" data-index="3">
+                            <h3>03 — Databases & Data</h3>
+                            <p class="lead">Structuring database models and maintaining data integrity.</p>
+                            <p>Utilizing SQL Server and EF Core to implement structured schemas. Applying foreign keys, constraints, and index optimizations to validate data consistency.</p>
+                        </div>
+                        <div class="explanation-content" data-index="4">
+                            <h3>04 — Business Logic</h3>
+                            <p class="lead">Translating real-world business constraints into functional code.</p>
+                            <p>Implementing data validation layers, authorization controls, and operations logic. Ensuring that requirements map exactly to system outputs.</p>
+                        </div>
+                        <div class="explanation-content" data-index="5">
+                            <h3>05 — Telecom Domain</h3>
+                            <p class="lead">Understanding the complex structural flows of telecom architecture.</p>
+                            <p>Exposure to telecom customer flows, data flows, and interactions between charging, billing, provisioning, and CRM platforms.</p>
+                        </div>
+                        <div class="explanation-content" data-index="6">
+                            <h3>06 — Charging & Billing</h3>
+                            <p class="lead">Managing subscriber transaction ratings and package rules.</p>
+                            <p>Hands-on package rating setup, active billing behavior validation, rating configuration controls, and SQL analysis in high-volume, business-critical systems.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="telecom-exposure-list">
+                    <h3>Practical Exposure Highlights</h3>
+                    <div class="exposure-grid">
+                        <div class="exposure-item">
+                            <h4>Service Configurations</h4>
+                            <p>Setting up pricing, ratings, package parameters, and active offer limits.</p>
+                        </div>
+                        <div class="exposure-item">
+                            <h4>SQL Validation</h4>
+                            <p>Querying subscriber, charging, and event data to ensure configurations are accurate.</p>
+                        </div>
+                        <div class="exposure-item">
+                            <h4>Behavior Verification</h4>
+                            <p>Running pre-deployment validation tests on package triggers and billing cycles.</p>
+                        </div>
+                        <div class="exposure-item">
+                            <h4>System Integration</h4>
+                            <p>Understanding provisioning sequences and data hand-offs between core systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    
+                    <!-- Backend - PRIMARY -->
+                    <div class="skills-card emphasis-card backend-skills">
+                        <div class="card-badge">Primary</div>
+                        <h3>Backend</h3>
+                        <ul class="skills-list">
+                            <li>C#</li>
+                            <li>ASP.NET Core</li>
+                            <li>ASP.NET Core Web API</li>
+                            <li>RESTful APIs</li>
+                            <li>Entity Framework Core</li>
+                            <li>Clean Architecture</li>
+                            <li>CRUD Operations</li>
+                        </ul>
+                    </div>
+
+                    <!-- Database & Data - PRIMARY -->
+                    <div class="skills-card emphasis-card database-skills">
+                        <div class="card-badge">Primary</div>
+                        <h3>Database & Data</h3>
+                        <ul class="skills-list">
+                            <li>SQL</li>
+                            <li>SQL Server</li>
+                            <li>Database Design</li>
+                            <li>Relationships & Constraints</li>
+                            <li>Data Integrity</li>
+                            <li>Data Validation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Domain - PRIMARY -->
+                    <div class="skills-card emphasis-card domain-skills">
+                        <div class="card-badge">Specialization</div>
+                        <h3>Domain Knowledge</h3>
+                        <ul class="skills-list">
+                            <li>Telecom Charging & Billing</li>
+                            <li>Telecom Service Rules</li>
+                            <li>Package Configuration</li>
+                            <li>Billing Configuration</li>
+                            <li>Charging Behavior Testing</li>
+                        </ul>
+                    </div>
+
+                    <!-- Security -->
+                    <div class="skills-card">
+                        <h3>Security</h3>
+                        <ul class="skills-list">
+                            <li>JWT (JSON Web Tokens)</li>
+                            <li>Authentication</li>
+                            <li>Authorization</li>
+                            <li>Role-Based Access Control (RBAC)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skills-card">
+                        <h3>Frontend</h3>
+                        <ul class="skills-list">
+                            <li>Angular</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skills-card">
+                        <h3>Tools</h3>
+                        <ul class="skills-list">
+                            <li>Git & GitHub</li>
+                            <li>Postman</li>
+                            <li>Visual Studio</li>
+                            <li>SQL Server Management Studio (SSMS)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Professional -->
+                    <div class="skills-card">
+                        <h3>Professional</h3>
+                        <ul class="skills-list">
+                            <li>Analytical Thinking</li>
+                            <li>Agile / Scrum</li>
+                            <li>Problem Solving</li>
+                            <li>Continuous Learning</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: EduScope -->
+                    <article class="project-card primary-project">
+                        <div class="project-card-header">
+                            <span class="project-category">Enterprise/Backend</span>
+                            <h3 class="project-name">EduScope</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-role-label">
+                                <strong>Role:</strong> Backend Developer
+                            </div>
+                            <div class="project-focus-label">
+                                <strong>Focus:</strong> API Development · Database Design · Authentication · Business Logic
+                            </div>
+                            <p class="project-desc">
+                                A structured training management system handling session schedules, agendas, evaluations, and multi-role operations with clean separation of concerns.
+                            </p>
+                            <div class="project-techs">
+                                <span>ASP.NET Core</span>
+                                <span>SQL Server</span>
+                                <span>EF Core</span>
+                                <span>JWT</span>
+                                <span>RBAC</span>
+                            </div>
+                            <div class="project-contribution">
+                                <strong>Main Contribution:</strong> Designed the SQL Server schema with integrity constraints and built the RESTful APIs using Clean Architecture with JWT authentication.
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <a href="#project-eduscope" class="btn-text">View Case Study <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: E-Commerce -->
+                    <article class="project-card primary-project">
+                        <div class="project-card-header">
+                            <span class="project-category">Full Stack</span>
+                            <h3 class="project-name">E-Commerce Web Application</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-role-label">
+                                <strong>Role:</strong> Full Stack Developer
+                            </div>
+                            <div class="project-focus-label">
+                                <strong>Focus:</strong> Backend Integration · Shopping Flows · Role Authentication · Product Filtering
+                            </div>
+                            <p class="project-desc">
+                                A comprehensive shopping web platform equipped with complete administrative controls, catalog querying, sorting mechanisms, and secure token checkout.
+                            </p>
+                            <div class="project-techs">
+                                <span>ASP.NET Core Web API</span>
+                                <span>Angular</span>
+                                <span>EF Core</span>
+                                <span>SQL Server</span>
+                                <span>JWT</span>
+                            </div>
+                            <div class="project-contribution">
+                                <strong>Main Contribution:</strong> Created JWT security rules, integrated the ASP.NET Core backend with the Angular frontend, and built the shopping cart and checkout routines.
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <a href="#project-ecommerce" class="btn-text">View Case Study <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Gold Price Tracker -->
+                    <article class="project-card secondary-project">
+                        <div class="project-card-header">
+                            <span class="project-category">Frontend & API Integration</span>
+                            <h3 class="project-name">Gold Price Tracker</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-role-label">
+                                <strong>Role:</strong> Front-End Developer
+                            </div>
+                            <div class="project-focus-label">
+                                <strong>Focus:</strong> DOM Manipulation · Fetch API · Asynchronous rendering
+                            </div>
+                            <p class="project-desc">
+                                A responsive dashboard rendering real-time gold market tracking. Built with semantic HTML for accessibility, optimized DOM rendering, and fast loading.
+                            </p>
+                            <div class="project-techs">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Fetch API</span>
+                            </div>
+                            <div class="project-contribution">
+                                <strong>Main Contribution:</strong> Integrated external pricing API streams using asynchronous Fetch scripts and designed responsive CSS layout cards.
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- How I Approach Problems Section -->
+        <section id="approach" class="approach-section">
+            <div class="container">
+                <h2 class="section-title">How I Approach Problems</h2>
+                
+                <div class="approach-flow">
+                    
+                    <div class="approach-step">
+                        <div class="step-circle">1</div>
+                        <div class="step-content">
+                            <h3>UNDERSTAND</h3>
+                            <p>Understand the requirement and business context.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-connector" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+
+                    <div class="approach-step">
+                        <div class="step-circle">2</div>
+                        <div class="step-content">
+                            <h3>ANALYZE</h3>
+                            <p>Analyze the data, rules, and system behavior.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-connector" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+
+                    <div class="approach-step">
+                        <div class="step-circle">3</div>
+                        <div class="step-content">
+                            <h3>DESIGN</h3>
+                            <p>Define the technical solution and structure.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-connector" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+
+                    <div class="approach-step">
+                        <div class="step-circle">4</div>
+                        <div class="step-content">
+                            <h3>IMPLEMENT</h3>
+                            <p>Build the solution using appropriate technologies.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-connector" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+
+                    <div class="approach-step">
+                        <div class="step-circle">5</div>
+                        <div class="step-content">
+                            <h3>TEST</h3>
+                            <p>Test functionality, validation, and edge cases.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-connector" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+
+                    <div class="approach-step">
+                        <div class="step-circle">6</div>
+                        <div class="step-content">
+                            <h3>VALIDATE</h3>
+                            <p>Confirm the final behavior matches the requirement.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-container">
+                <h2 class="section-title">Contact</h2>
+                <p class="contact-subtitle">Let's connect. Get in touch for backend developer roles or telecom queries.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-info-item">
+                        <span class="info-label">Location</span>
+                        <span class="info-value">Amman, Jordan</span>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="info-label">Email</span>
+                        <div class="email-copy-wrapper">
+                            <span class="info-value email-text" id="email-address">SANADRAHAHLEH204@GMAIL.COM</span>
+                            <button class="btn-copy" id="btn-copy-email" aria-label="Copy email address to clipboard">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-actions">
+                    <a href="mailto:SANADRAHAHLEH204@GMAIL.COM" class="btn btn-primary">Email Me</a>
+                    <a href="https://www.linkedin.com/in/Sanad-Rahahleh" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+                    <a href="https://github.com/SanadRahahleh" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+                    <a href="assets/SANAD_NASER_RAHAHLEH.pdf" class="btn btn-secondary" download="Sanad-Rahahleh-CV.pdf">Download CV</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Sanad Naser Rahahleh. All rights reserved.</p>
+            <p class="footer-note">Designed & coded with vanilla Web standards.</p>
+        </div>
+    </footer>
+
+    <!-- CASE STUDY OVERLAYS -->
+    
+    <!-- EduScope Case Study -->
+    <div id="project-eduscope" class="case-study-overlay" role="dialog" aria-modal="true" aria-labelledby="eduscope-cs-title" style="display: none;">
+        <div class="case-study-container">
+            <div class="case-study-header">
+                <a href="#projects" class="btn-close-cs" aria-label="Close Case Study">&times; Close</a>
+            </div>
+            
+            <article class="case-study-content">
+                <h1 id="eduscope-cs-title">EduScope Case Study</h1>
+                <div class="cs-meta">
+                    <div><strong>Role:</strong> Backend Developer</div>
+                    <div><strong>Focus:</strong> Clean Architecture, Web API, Relational DB Design</div>
+                </div>
+
+                <section class="cs-section">
+                    <h2>Overview</h2>
+                    <p>
+                        EduScope is a structured educational system designed to coordinate session management, training agendas, evaluations, and programmatic structures. I worked primarily on the backend, focusing on building solid core layers, robust database integrity, security access levels, and REST APIs.
+                    </p>
+                </section>
+
+                <section class="cs-section">
+                    <h2>My Role</h2>
+                    <p>
+                        As the Backend Developer, I was responsible for designing and implementing the API structure, database schemas, and JWT security model. I operated within an Agile/Scrum team, translating functional requirements into structured database models and endpoints, validating data inputs, and ensuring strict role separation.
+                    </p>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Architecture</h2>
+                    <p>
+                        The backend follows <strong>Clean Architecture</strong> principles, separating the system into logical layers:
+                    </p>
+                    <ul>
+                        <li><strong>Domain:</strong> Houses basic entities, schemas, and core models.</li>
+                        <li><strong>Application:</strong> Directs business cases, contracts, validation logic, and interfaces.</li>
+                        <li><strong>Infrastructure:</strong> Implements data access configurations, encryption, and external interfaces.</li>
+                        <li><strong>Web API:</strong> Handles HTTP endpoints, CORS rules, and middleware routing.</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Backend</h2>
+                    <p>
+                        Built using <strong>ASP.NET Core Web API</strong>. The API is structured with custom model validations and centralized error-handling middlewares to format internal anomalies into clean HTTP status results, preventing raw server stack traces from being exposed.
+                    </p>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Database</h2>
+                    <p>
+                        Designed the complete relational schema in <strong>SQL Server</strong> and mapped it via <strong>Entity Framework Core</strong> (Code First). Applied relational database rules:
+                    </p>
+                    <ul>
+                        <li>Primary and Foreign keys to ensure absolute referential integrity.</li>
+                        <li>Constraints to enforce range boundaries and string restrictions.</li>
+                        <li>Logical data normalization to prevent duplication across records.</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Security</h2>
+                    <p>
+                        Implemented secure system access using **JSON Web Tokens (JWT)** and **Role-Based Access Control (RBAC)**.
+                    </p>
+                    <ul>
+                        <li>Supports separate roles: <strong>Admin</strong>, <strong>Trainer</strong>, and <strong>Student</strong>.</li>
+                        <li>Tokens are signed server-side and contain user claims and permissions.</li>
+                        <li>Controllers utilize strict authorization filters to ensure roles can only read or edit authorized data blocks.</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>Session Management:</strong> Operations to build, update, and manage student training blocks.</li>
+                        <li><strong>Agendas:</strong> Structuring calendar events and schedules.</li>
+                        <li><strong>Evaluation Reports:</strong> Scoring grids and progress documentation.</li>
+                        <li><strong>Data Validation:</strong> Automated checks on request payloads before operations execute.</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h2>My Contributions</h2>
+                    <ul>
+                        <li>Constructed the complete SQL Server schemas and relations.</li>
+                        <li>Wrote the repositories and database context classes using EF Core.</li>
+                        <li>Developed backend modules for sessions, reports, and agendas.</li>
+                        <li>Secured controllers and endpoints using RBAC filters.</li>
+                        <li>Collaborated on user story refinement in Agile standups.</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h2>What I Learned</h2>
+                    <p>
+                        Deepened my practical understanding of separating software concerns under Clean Architecture. I learned to anticipate data boundary failures by adding strong validation checks, and gained confidence in creating highly structured, secure, and documentable APIs for client consumers.
+                    </p>
+                </section>
+            </article>
+        </div>
+    </div>
+
+    <!-- E-Commerce Case Study -->
+    <div id="project-ecommerce" class="case-study-overlay" role="dialog" aria-modal="true" aria-labelledby="ecommerce-cs-title" style="display: none;">
+        <div class="case-study-container">
+            <div class="case-study-header">
+                <a href="#projects" class="btn-close-cs" aria-label="Close Case Study">&times; Close</a>
+            </div>
+            
+            <article class="case-study-content">
+                <h1 id="ecommerce-cs-title">E-Commerce Web Application</h1>
+                <div class="cs-meta">
+                    <div><strong>Role:</strong> Full Stack Developer</div>
+                    <div><strong>Focus:</strong> Angular Integration, Shopping Carts, Token Authorization</div>
+                </div>
+
+                <section class="cs-section">
+                    <h2>Overview</h2>
+                    <p>
+                        This is a responsive full-stack e-commerce web application featuring client catalog browsing, admin product administration, review submission, shopping cart adjustments, and order workflows.
+                    </p>
+                </section>
+
+                <section class="cs-section">
+                    <h2>My Role</h2>
+                    <p>
+                        As the Full Stack Developer, I designed both the relational database database schema and C# APIs, and integrated them with a dynamic interface in Angular, ensuring responsive grid layouts and seamless API communication.
+                    </p>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Technology Stack</h2>
+                    <ul>
+                        <li><strong>Backend:</strong> ASP.NET Core Web API</li>
+                        <li><strong>Frontend:</strong> Angular</li>
+                        <li><strong>Database:</strong> SQL Server</li>
+                        <li><strong>ORM:</strong> Entity Framework Core</li>
+                        <li><strong>Security:</strong> JWT & Authorization Guard rules</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Authentication & Authorization</h2>
+                    <p>
+                        Secure login processes are managed using JSON Web Tokens (JWT). The Angular frontend captures the token upon successful sign-in and passes it in subsequent request headers via interceptors. Specific routes and buttons are hidden or revealed based on the user's role:
+                    </p>
+                    <ul>
+                        <li><strong>Admin:</strong> Authorized to perform product creations, updates, inventory adjustments, and view complete customer orders.</li>
+                        <li><strong>Customer:</strong> Authorized to browse products, read reviews, manage their private shopping cart, and check out.</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Core Features</h2>
+                    <ul>
+                        <li><strong>Product Management:</strong> Admin-controlled CRUD operations for product inventory.</li>
+                        <li><strong>Shopping Cart:</strong> Client-side caching and backend synchronization of items.</li>
+                        <li><strong>Orders:</strong> Creating checkout records and tracking customer purchases.</li>
+                        <li><strong>Product Reviews:</strong> Rating system allowing customer feedback on products.</li>
+                        <li><strong>Search, Filtering, & Pagination:</strong> Efficient querying using server-side pagination, categories, and keyword filtering to keep loading speeds high.</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Database</h2>
+                    <p>
+                        Implemented in SQL Server through Entity Framework Core. Created tables for Products, Customers, Orders, OrderItems, Reviews, and Users. Applied relationships (one-to-many, many-to-many) and cascading deletion constraints where appropriate.
+                    </p>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Frontend / Backend Integration</h2>
+                    <p>
+                        Used Angular's HttpClient to map backend REST endpoints. Created custom interceptors to insert token headers automatically for authorized operations. Built guards to restrict unauthorized URLs, displaying custom fallback pages.
+                    </p>
+                </section>
+
+                <section class="cs-section">
+                    <h2>What I Learned</h2>
+                    <p>
+                        Gained extensive experience coordinating front-to-back security workflows, managing state syncing between local shopping carts and backend tables, and configuring server-side sorting/filtering rules to optimize data payloads.
+                    </p>
+                </section>
+            </article>
+        </div>
+    </div>
+
+    <!-- JavaScript script file -->
+    <script src="script.js"></script>
+</body>
+</html>
