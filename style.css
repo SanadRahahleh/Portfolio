@@ -249,8 +249,8 @@ ul {
 /* Hero Section */
 .hero-section {
     padding-top: calc(var(--header-height) + 4rem);
-    padding-bottom: 6rem;
-    min-height: 85vh;
+    padding-bottom: 4rem;
+    min-height: 75vh;
     display: flex;
     align-items: center;
 }
@@ -342,62 +342,148 @@ ul {
     gap: 1rem;
 }
 
-/* Hero supporting visual (workflow) */
+/* Hero visual - Tech Ecosystem SVG */
 .hero-visual {
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.workflow-visual {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    width: 100%;
-    max-width: 320px;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border-color);
-    padding: 2rem 1.5rem;
-    border-radius: 12px;
+.tech-ecosystem-svg {
+    max-width: 420px;
+    height: auto;
+    overflow: visible;
+    animation: floatEcosystem 6s ease-in-out infinite;
 }
 
-.workflow-node {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    transition: var(--transition-normal);
+@keyframes floatEcosystem {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
 }
 
-.workflow-node.highlight {
-    border-color: var(--accent-teal);
-    box-shadow: 0 0 15px rgba(13, 148, 136, 0.1);
+/* Base Node Styling */
+.sat-circle {
+    fill: var(--bg-secondary);
+    stroke: var(--border-color);
+    stroke-width: 1.5;
+    transition: fill var(--transition-normal), stroke var(--transition-normal), stroke-width var(--transition-normal), r var(--transition-normal), transform var(--transition-normal);
 }
 
-.workflow-node .node-title {
+.icon-shape {
+    transition: stroke var(--transition-normal), fill var(--transition-normal);
+}
+
+.node-label {
     font-family: var(--font-heading);
+    font-size: 0.75rem;
     font-weight: 700;
-    font-size: 0.95rem;
-    color: var(--text-primary);
+    fill: var(--text-secondary);
+    letter-spacing: 0.05em;
+    transition: fill var(--transition-normal);
+    pointer-events: none;
 }
 
-.workflow-node .node-subtitle {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    margin-top: 0.25rem;
-    text-transform: uppercase;
+.mini-label {
+    font-size: 0.65rem;
+}
+
+.accent-label {
+    fill: var(--text-muted);
+}
+
+/* Connect Lines */
+.connect-line {
+    transition: stroke var(--transition-normal), stroke-width var(--transition-normal), opacity var(--transition-normal);
+}
+
+/* Central Node */
+.center-circle {
+    box-shadow: 0 0 20px rgba(20, 184, 166, 0.4);
+    transition: transform var(--transition-normal), stroke-width var(--transition-normal), stroke var(--transition-normal);
+    cursor: pointer;
+}
+
+.center-text {
+    pointer-events: none;
     letter-spacing: 0.02em;
 }
 
-.workflow-arrow {
-    display: flex;
-    justify-content: center;
-    color: var(--text-muted);
+/* Hover States & Highlights */
+.node-group {
+    cursor: pointer;
+    outline: none;
 }
 
-.workflow-arrow svg {
-    transform: rotate(90deg);
+.node-group:hover .sat-circle {
+    fill: rgba(13, 148, 136, 0.1);
+    stroke: var(--accent-teal-light);
+    stroke-width: 2;
+    transform: scale(1.08);
+}
+
+.node-group:hover .icon-shape {
+    stroke: var(--accent-teal-light);
+}
+
+.node-group:hover .node-label {
+    fill: var(--text-primary);
+}
+
+.node-group.special-domain-node .sat-circle {
+    stroke: rgba(99, 102, 241, 0.3);
+}
+
+.node-group.special-domain-node:hover .sat-circle {
+    stroke: var(--accent-indigo);
+    fill: rgba(99, 102, 241, 0.1);
+}
+
+.node-group.special-domain-node:hover .node-label {
+    fill: var(--accent-blue-light);
+}
+
+/* Pulse Lines Flowing along paths */
+.pulse-line {
+    stroke-dasharray: 6, 20;
+    opacity: 0.6;
+}
+
+.pulse-up {
+    animation: flowUp 3s linear infinite;
+}
+.pulse-left {
+    animation: flowLeft 3s linear infinite;
+}
+.pulse-right {
+    animation: flowRight 3s linear infinite;
+}
+.pulse-down {
+    animation: flowDown 3s linear infinite;
+}
+.pulse-right-sub {
+    animation: flowRightSub 3.5s linear infinite;
+}
+
+@keyframes flowUp {
+    to { stroke-dashoffset: -26; }
+}
+@keyframes flowLeft {
+    to { stroke-dashoffset: -26; }
+}
+@keyframes flowRight {
+    to { stroke-dashoffset: -26; }
+}
+@keyframes flowDown {
+    to { stroke-dashoffset: -26; }
+}
+@keyframes flowRightSub {
+    to { stroke-dashoffset: -26; }
 }
 
 /* About Section */
@@ -1307,16 +1393,8 @@ ul {
         order: -1;
     }
     
-    .workflow-visual {
-        flex-direction: row;
-        max-width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.5rem;
-    }
-    
-    .workflow-arrow svg {
-        transform: rotate(0deg);
+    .tech-ecosystem-svg {
+        max-width: 320px;
     }
     
     .about-grid {
@@ -1410,13 +1488,8 @@ ul {
         transform: translateY(-8px) rotate(-45deg);
     }
     
-    .workflow-visual {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .workflow-arrow svg {
-        transform: rotate(90deg);
+    .tech-ecosystem-svg {
+        max-width: 260px;
     }
     
     .experience-timeline {
@@ -1484,6 +1557,8 @@ ul {
     }
 }
 
+
+
 /* Accessibility: prefers-reduced-motion Support */
 @media (prefers-reduced-motion: reduce) {
     html {
@@ -1505,5 +1580,12 @@ ul {
     
     .explanation-content.active {
         animation: none !important;
+    }
+    
+    .tech-ecosystem-svg {
+        animation: none !important;
+    }
+    .node-group:hover .sat-circle {
+        transform: none !important;
     }
 }

@@ -190,7 +190,47 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('hashchange', handleRouting);
     handleRouting(); // Initial call to open if URL has hash on load
 
-    // 7. Scroll Reveal Animation using IntersectionObserver
+    // 7. Hero Visual Connection Highlights
+    const nodeGroups = document.querySelectorAll('.node-group');
+    const connectLines = document.querySelectorAll('.connect-line');
+    
+    if (nodeGroups.length > 0 && connectLines.length > 0) {
+        nodeGroups.forEach(group => {
+            const label = group.getAttribute('data-label');
+            group.addEventListener('mouseenter', () => {
+                connectLines.forEach((line, index) => {
+                    // Match line index or write a helper mapping
+                    // Index 0: frontend, 1: api, 2: database, 3: backend, 4: telecom (backend to telecom), 5: billing (telecom to billing), 6: security, 7: data
+                    const isMatch = (label === 'frontend' && index === 0) ||
+                                    (label === 'api' && index === 1) ||
+                                    (label === 'database' && index === 2) ||
+                                    (label === 'backend' && index === 3) ||
+                                    (label === 'telecom' && (index === 4 || index === 3)) ||
+                                    (label === 'billing' && (index === 5 || index === 4 || index === 3)) ||
+                                    (label === 'security' && index === 6) ||
+                                    (label === 'data' && index === 7);
+                    
+                    if (isMatch) {
+                        line.style.stroke = label === 'telecom' || label === 'billing' ? 'var(--accent-indigo)' : 'var(--accent-teal-light)';
+                        line.style.strokeWidth = '2.5px';
+                        line.style.opacity = '1';
+                    } else {
+                        line.style.opacity = '0.15';
+                    }
+                });
+            });
+            
+            group.addEventListener('mouseleave', () => {
+                connectLines.forEach(line => {
+                    line.style.stroke = '';
+                    line.style.strokeWidth = '';
+                    line.style.opacity = '';
+                });
+            });
+        });
+    }
+
+    // 8. Scroll Reveal Animation using IntersectionObserver
     // Only register observer if motion is not disabled by browser preferences
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     
