@@ -1389,10 +1389,6 @@ ul {
         gap: 3rem;
     }
     
-    .hero-visual {
-        order: -1;
-    }
-    
     .tech-ecosystem-svg {
         max-width: 320px;
     }

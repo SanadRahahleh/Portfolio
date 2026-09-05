@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Sanad Naser Rahahleh | Full Stack .NET Developer</title>
+=======
+    <title>Sanad Naser Rahahleh |  Full Stack .NET Developer</title>
+>>>>>>> 2a584a3 (Update project Booking management)
     <meta name="description"
         content="Sanad Naser Rahahleh is a Backend-Focused Full Stack .NET Developer with experience in ASP.NET Core, RESTful APIs, SQL Server, and Telecom Charging & Billing.">
 
@@ -707,7 +711,45 @@
                 <h2 class="section-title">Projects</h2>
                 <div class="projects-grid">
 
-                    <!-- Project 1: EduScope -->
+                    <!-- Project 1: Booking Management Service -->
+                    <article class="project-card primary-project">
+                        <div class="project-card-header">
+                            <span class="project-category">Backend & Architecture</span>
+                            <h3 class="project-name">Booking Management Service</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <div class="project-role-label">
+                                <strong>Role:</strong> Backend Developer (.NET)
+                            </div>
+                            <div class="project-focus-label">
+                                <strong>Focus:</strong> REST API · 3-Tier Layered Architecture · Double-Booking Prevention · xUnit Testing
+                            </div>
+                            <p class="project-desc">
+                                A robust backend system for scheduling shared organizational resources (meeting rooms, desks, equipment) with validation logic preventing time overlaps and double bookings.
+                            </p>
+                            <div class="project-techs">
+                                <span>ASP.NET Core</span>
+                                <span>C#</span>
+                                <span>EF Core 10</span>
+                                <span>SQL Server</span>
+                                <span>xUnit</span>
+                                <span>Layered Architecture</span>
+                            </div>
+                            <div class="project-contribution">
+                                <strong>Main Contribution:</strong> Designed the 3-Tier Architecture, engineered the time-overlap validation algorithm, implemented EF Core database models, and wrote automated xUnit tests.
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <a href="#project-booking" class="btn-text">View Case Study <svg width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: EduScope -->
                     <article class="project-card primary-project">
                         <div class="project-card-header">
                             <span class="project-category">Enterprise/Backend</span>
@@ -1184,6 +1226,93 @@
                         Gained extensive experience coordinating front-to-back security workflows, managing state
                         syncing between local shopping carts and backend tables, and configuring server-side
                         sorting/filtering rules to optimize data payloads.
+                    </p>
+                </section>
+            </article>
+        </div>
+    </div>
+
+    <!-- Booking Management Service Case Study -->
+    <div id="project-booking" class="case-study-overlay" role="dialog" aria-modal="true"
+        aria-labelledby="booking-cs-title" style="display: none;">
+        <div class="case-study-container">
+            <div class="case-study-header">
+                <a href="#projects" class="btn-close-cs" aria-label="Close Case Study">&times; Close</a>
+            </div>
+
+            <article class="case-study-content">
+                <h1 id="booking-cs-title">Booking Management Service Case Study</h1>
+                <div class="cs-meta">
+                    <div><strong>Role:</strong> Backend Developer (.NET)</div>
+                    <div><strong>Focus:</strong> 3-Tier Architecture, Business Rules, Concurrency & Overlap Validation, Unit Testing</div>
+                </div>
+
+                <section class="cs-section">
+                    <h2>Overview</h2>
+                    <p>
+                        Booking Management Service is a backend system designed to solve resource-allocation conflicts in enterprise environments. It provides RESTful APIs for managing users, shared resources (meeting rooms, workstations, equipment), and reservations while safeguarding against schedule overlaps and double-booking errors.
+                    </p>
+                </section>
+
+                <section class="cs-section">
+                    <h2>My Role</h2>
+                    <p>
+                        As the Backend Developer, I built the system from scratch following 3-Tier Layered Architecture principles. I implemented the service interfaces, EF Core data contexts, double-booking validation algorithms, xUnit test suites, and a responsive frontend dashboard.
+                    </p>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Architecture</h2>
+                    <p>
+                        The application is structured using a clean <strong>3-Tier Layered Architecture</strong> to maintain a strict separation of concerns:
+                    </p>
+                    <ul>
+                        <li><strong>Controller Layer:</strong> Exposes clean HTTP endpoints (`UsersController`, `ResourcesController`, `BookingsController`) and formats JSON responses.</li>
+                        <li><strong>Service Interface Layer:</strong> Defines abstract contracts (`IBookingService`, `IResourceService`, `IUserService`) to decouples layers and facilitate unit testing.</li>
+                        <li><strong>Service Implementation Layer:</strong> Contains core application business logic, double-booking validation routines, and data transformations.</li>
+                        <li><strong>Data Access Layer:</strong> Manages SQL Server database operations using EF Core 10 `AppDbContext` and relational migrations.</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Core Business Logic & Overlap Validation</h2>
+                    <p>
+                        The core challenge of resource booking is preventing scheduling conflicts. I implemented an algorithm that evaluates requested booking windows (`StartDateTime` to `EndDateTime`) against existing database records:
+                    </p>
+                    <ul>
+                        <li><strong>Overlap Prevention:</strong> Any new reservation is checked to ensure `(RequestedStart < ExistingEnd) AND (RequestedEnd > ExistingStart)` for the target resource.</li>
+                        <li><strong>Input Guardrails:</strong> Verifies that start dates precede end dates and rejects historical booking attempts.</li>
+                        <li><strong>Data Integrity:</strong> Foreign key relationships link bookings to verified users and active resources.</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Automated Unit Testing</h2>
+                    <p>
+                        To ensure high system reliability, I authored automated unit tests using <strong>xUnit</strong> and <strong>EF Core InMemory Database</strong>:
+                    </p>
+                    <ul>
+                        <li>Verified successful booking creation for non-overlapping time slots.</li>
+                        <li>Tested error throwing and HTTP 400 bad request responses when attempting conflicting bookings.</li>
+                        <li>Validated edge cases such as exact boundary times and invalid resource IDs.</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h2>Key Contributions & Technical Highlights</h2>
+                    <ul>
+                        <li><strong>Resource Management:</strong> Architected a RESTful backend service to manage bookings for shared organizational resources (meeting rooms, desks, and equipment).</li>
+                        <li><strong>Validation Logic:</strong> Engineered time-overlap validation logic preventing double-booking conflicts and invalid scheduling requests.</li>
+                        <li><strong>Architecture & Design:</strong> Implemented 3-Tier Layered Architecture utilizing Dependency Injection, Service Interfaces, and EF Core ORM for clean maintainability.</li>
+                        <li><strong>Automated Testing:</strong> Authored automated unit tests using xUnit and EF Core InMemory database to validate core business rules and edge cases.</li>
+                        <li><strong>Frontend Integration:</strong> Built a lightweight web dashboard (HTML5, CSS3, ES6 JavaScript) communicating with backend API endpoints.</li>
+                    </ul>
+                </section>
+
+                <section class="cs-section">
+                    <h2>What I Learned</h2>
+                    <p>
+                        This project deepened my expertise in designing bulletproof business logic for scheduling systems. I learned how to isolate service contracts for seamless unit testing and gained hands-on experience structuring a production-ready 3-Tier architecture in .NET 10.
                     </p>
                 </section>
             </article>
