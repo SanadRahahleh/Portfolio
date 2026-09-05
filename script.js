@@ -133,7 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlays = {
         '#project-booking': document.getElementById('project-booking'),
         '#project-eduscope': document.getElementById('project-eduscope'),
-        '#project-ecommerce': document.getElementById('project-ecommerce')
+        '#project-ecommerce': document.getElementById('project-ecommerce'),
+        '#project-goldtracker': document.getElementById('project-goldtracker')
     };
 
     const handleRouting = () => {
